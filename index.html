@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        
+        <script type="text/javascript" src="js/leaflet-src.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+        integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin=""/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+        <script type="text/javascript" src="js/leaflet-providers.js"></script>
+        
+        <script type="text/javascript" src="js/Leaflet.draw.js"></script>
+        <script type="text/javascript" src="js/Leaflet.Draw.Event.js"></script>
+        <link rel="stylesheet" href="./css/leaflet.draw.css"/>
+
+        <script type="text/javascript" src="js/Toolbar.js"></script>
+        <script type="text/javascript" src="js/Tooltip.js"></script>
+
+        <script type="text/javascript" src="js/GeometryUtil.js"></script>
+        <script type="text/javascript" src="js/LatLngUtil.js"></script>
+        <script type="text/javascript" src="js/LineUtil.Intersect.js"></script>
+        <script type="text/javascript" src="js/Polygon.Intersect.js"></script>
+        <script type="text/javascript" src="js/Polyline.Intersect.js"></script>
+        <script type="text/javascript" src="js/TouchEvents.js"></script>
+
+        <script type="text/javascript" src="js/DrawToolbar.js"></script>
+        <script type="text/javascript" src="js/Draw.Feature.js"></script>
+        <script type="text/javascript" src="js/Draw.SimpleShape.js"></script>
+        <script type="text/javascript" src="js/Draw.Polyline.js"></script>
+        <script type="text/javascript" src="js/Draw.Marker.js"></script>
+        <script type="text/javascript" src="js/Draw.Circle.js"></script>
+        <script type="text/javascript" src="js/Draw.CircleMarker.js"></script>
+        <script type="text/javascript" src="js/Draw.Polygon.js"></script>
+        <script type="text/javascript" src="js/Draw.Rectangle.js"></script>
+
+        <script type="text/javascript" src="js/EditToolbar.js"></script>
+        <script type="text/javascript" src="js/EditToolbar.Edit.js"></script>
+        <script type="text/javascript" src="js/EditToolbar.Delete.js"></script>
+        <script type="text/javascript" src="js/Control.Draw.js"></script>
+        <script type="text/javascript" src="js/Edit.Poly.js"></script>
+        <script type="text/javascript" src="js/Edit.SimpleShape.js"></script>
+        <script type="text/javascript" src="js/Edit.Rectangle.js"></script>
+        <script type="text/javascript" src="js/Edit.Marker.js"></script>
+        <script type="text/javascript" src="js/Edit.CircleMarker.js"></script>
+        <script type="text/javascript" src="js/Edit.Circle.js"></script>
+        
+        <script type="text/javascript" src="js/leaflet.filelayer.js"></script>
+        <script type="text/javascript" src="js/togeojson.js"></script>
+
+        <!-- <link rel="stylesheet" href="./css/style.css"/> -->
+        <!-- <link rel="stylesheet" href="./css/style2.css"/> -->
+        
+        <style>
+            #map { height: 100%; }
+			#delete, #export {
+			position: absolute;
+			top:50px;
+			right:10px;
+			z-index:1000000;
+			background:white;
+			color:black;
+			padding:6px;
+			border-radius:4px;
+			font-family: 'Helvetica Neue';
+			cursor: pointer;
+			font-size:12px;
+			text-decoration:none;
+			
+			}
+		#export {
+		  top:90px;
+			}
+        </style>
+
+
+    </head>
+    <body>
+        
+        <script type="text/javascript" src="js/Working.js"></script>
+        
+
+        <div id='map' style=" position: relative;" class="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0"></div>   
+	    <div id='delete'>Delete Features</div>
+	    <a href='#' id='export'>Export Features</a>
+    </body>
+</html>

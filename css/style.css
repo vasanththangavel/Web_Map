@@ -1,0 +1,16 @@
+#mapid { height: 480px; }
+
+#delete, #export {
+            position: absolute;
+            top:50px;
+            right:10px;
+            z-index:100;
+            background:white;
+            color:black;
+            padding:6px;
+            border-radius:4px;
+            font-family: 'Helvetica Neue';
+            cursor: pointer;
+            font-size:22px;
+            text-decoration:none;
+        }
